@@ -1,3 +1,5 @@
+[![asciicast](https://asciinema.org/a/InujH91XAFI1jfxj.svg)](https://asciinema.org/a/InujH91XAFI1jfxj)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/karelinaas/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/karelinaas/python-project-49/actions)
 
