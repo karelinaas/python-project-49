@@ -1,7 +1,11 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Mathematical games for brain training"
+authors = [
+    { name = "Aleksandra Minina", email = "i@minina-work.ru" },
+    { name = "Hexlet", email = "hexlet@hexlet.io" },
+]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

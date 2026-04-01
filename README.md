@@ -22,3 +22,74 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=karelinaas_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=karelinaas_python-project-49)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=karelinaas_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=karelinaas_python-project-49)
+
+# Brain Games
+
+Набор консольных игр для тренировки математических навыков и логического мышления.
+
+## Описание проекта
+
+Brain Games - это коллекция из пяти обучающих игр, которые помогают развивать математические способности:
+
+- **Even Game** - определение четности числа
+- **Calc Game** - решение простых арифметических выражений
+- **GCD Game** - нахождение наибольшего общего делителя
+- **Progression Game** - поиск пропущенного элемента в арифметической прогрессии
+- **Prime Game** - определение простого числа
+
+## Минимальные требования
+
+- Python 3.14 или выше
+- Установленный пакетный менеджер [uv](https://docs.astral.sh/uv/)
+
+## Инструкции по установке
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/karelinaas/python-project-49.git
+cd python-project-49
+```
+
+2. Установите зависимости:
+```bash
+make install
+# или
+uv sync
+```
+
+## Инструкции по запуску
+
+### Запуск конкретных игр
+
+```bash
+# Игра на определение четности
+brain-even
+
+# Калькулятор
+brain-calc
+
+# Наибольший общий делитель
+brain-gcd
+
+# Арифметическая прогрессия
+brain-progression
+
+# Простые числа
+brain-prime
+```
+
+### Сборка проекта
+
+```bash
+make build
+# или
+uv build
+```
+
+### Проверка кода
+
+```bash
+make lint
+# или
+uv run ruff check brain_games
+```
