@@ -1,7 +1,7 @@
 import random
 
 
-def calc_game(game_starts: bool) -> tuple[str, int | None]:
+def calc_game(game_starts: bool) -> tuple[str, str]:
     if game_starts:
         print("What is the result of the expression?")
 
@@ -18,4 +18,4 @@ def calc_game(game_starts: bool) -> tuple[str, int | None]:
         case "*":
             result = number1 * number2
     
-    return f"{number1} {operation_symbol} {number2}", result
+    return f"{number1} {operation_symbol} {number2}", str(result)

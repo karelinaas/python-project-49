@@ -1,7 +1,7 @@
 import random
 
 
-def prime_game(game_starts: bool) -> tuple[int, str]:
+def prime_game(game_starts: bool) -> tuple[str, str]:
     if game_starts:
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
@@ -21,4 +21,4 @@ def prime_game(game_starts: bool) -> tuple[int, str]:
     number = random.randint(1, 100)
     correct_answer = "yes" if is_prime(number) else "no"
     
-    return number, correct_answer
+    return str(number), correct_answer

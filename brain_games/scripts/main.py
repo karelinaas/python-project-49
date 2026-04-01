@@ -6,6 +6,8 @@ from brain_games.scripts.cli import get_game_name, welcome_user
 
 
 def main():
+    ROUND_COUNT = 3
+
     if not (game := get_game_name()):
         print("Wrong command configuration!")
         return
@@ -16,7 +18,7 @@ def main():
 
     correct_answers = 0
 
-    while correct_answers < 3:
+    while correct_answers < ROUND_COUNT:
         question, correct_answer = game_func(correct_answers == 0)
         if correct_answer is None:
             return
@@ -24,7 +26,7 @@ def main():
         print(f"Question: {question}")
         user_answer = string("Your answer: ")
 
-        if user_answer.lower() == str(correct_answer):
+        if user_answer.lower() == correct_answer:
             print("Correct!")
             correct_answers += 1
         else:

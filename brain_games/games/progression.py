@@ -1,7 +1,7 @@
 import random
 
 
-def progression_game(game_starts: bool) -> tuple[str, int]:
+def progression_game(game_starts: bool) -> tuple[str, str]:
     if game_starts:
         print("What number is missing in the progression?")
     
@@ -19,4 +19,4 @@ def progression_game(game_starts: bool) -> tuple[str, int]:
     
     progression[hidden_index] = ".."
     
-    return " ".join(str(num) for num in progression), correct_answer
+    return " ".join(str(num) for num in progression), str(correct_answer)

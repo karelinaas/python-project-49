@@ -1,7 +1,7 @@
 import random
 
 
-def gcd_game(game_starts: bool) -> tuple[str, int]:
+def gcd_game(game_starts: bool) -> tuple[str, str]:
     if game_starts:
         print("Find the greatest common divisor of given numbers.")
 
@@ -13,4 +13,4 @@ def gcd_game(game_starts: bool) -> tuple[str, int]:
             a, b = b, a % b
         return a
 
-    return f"{num1} {num2}", gcd(num1, num2)
+    return f"{num1} {num2}", str(gcd(num1, num2))
